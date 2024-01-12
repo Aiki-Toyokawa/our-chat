@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "start": "node app.js",
+    "build": "cd client && npm install && npm run build"
+  }
+}
