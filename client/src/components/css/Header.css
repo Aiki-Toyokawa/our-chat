@@ -1,0 +1,59 @@
+/* Header.css */
+.Header-header {
+  padding: 4px;
+  background-color: #282c34;height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+  width: 100%;
+}
+
+.Header-header nav {
+  width: 100%;
+}
+.Header-header ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Header-header nav ul li {
+  width: 10%;
+  text-align: center;
+}
+
+.Header-header nav ul li a {
+  position: relative;
+  color: #FFFFFF; 
+  display: inline-block; /* 擬似要素の配置に必要 */
+}
+.Header-header nav ul li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px; /* アンダーラインの太さ */
+  bottom: -4px; /* テキストからの距離 */
+  left: 50%;
+  background-color: #b2c1df; /* アンダーラインの色 */
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.Header-header nav ul li a:hover::before {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+}
+.Header-header nav ul li a:visited,
+.Header-header nav ul li a:active {
+  color: #FFFFFF; /* 希望の色に設定 */
+}
+.Header-header nav ul li a:hover {
+  color: #b2c1df;
+}
+
+.Header-header p {
+  color: #e6bfea;
+}

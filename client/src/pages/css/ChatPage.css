@@ -1,0 +1,72 @@
+.chatpage-body {
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.chatpage-chat-screen {
+  height: 80%;
+  width: 80%;
+  background-color: rgb(197, 189, 174);
+
+  padding: 20px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  overflow-x: hidden;
+  overflow-y: auto; /* スクロールを有効にする */
+}
+.message-box {
+  width: 80%;
+  height: auto;
+
+  margin-top: 4px;
+  padding: 4px;
+
+  background-color: rgb(255, 184, 69);
+  border: solid 0px rgb(255, 255, 255);
+  border-radius: 20px;
+  word-wrap: break-word; /* 長いテキストを折り返し */
+}
+
+.chatpage-footer-wrap {
+  height: 10vh;
+  width: 100%;
+  background-color: bisque;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 0;
+}
+.chatpage-text-input {
+  height: 50px;
+  width: 60%;
+
+  padding: 10px;
+
+  border-radius: 20px;
+  background-color: rgb(208, 227, 245);
+  font-size: 18px;
+}
+.submit-button {
+  height: 50px;
+  width: 50px;
+
+  border: solid 1px rgba(141, 168, 99, 0.226);
+  
+  cursor: pointer;
+  border-radius: 50px;
+}
+.submit-button:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+

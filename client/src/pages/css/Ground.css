@@ -1,0 +1,15 @@
+.ground-screen {
+  height: 90vh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+text {
+  font-size: 100px;
+}
+.trio {
+  height: 20px;
+  width: 26px;
+}
